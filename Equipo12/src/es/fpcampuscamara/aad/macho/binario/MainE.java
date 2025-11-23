@@ -3,53 +3,56 @@ package es.fpcampuscamara.aad.macho.binario;
 /* Equipo 12: Juan Luis Gil de Miguel, Ricardo Boza Villar */
 
 import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.BufferedInputStream;
 import java.io.IOException;
+import java.util.Map;
+import java.util.EnumMap;
 
+/**
+ * Obtiene el nombre de la provincia(s) con mayor número de empleados.
+ * <p>
+ * Recorre todos los registros del fichero binario {@code FICHE.DAT} mediante {@link EmpleadoDAO},
+ * contabiliza los empleados por provincia y muestra aquellas con el máximo número.
+ * </p>
+ *
+ * @author Juan Luis Gil de Miguel
+ * @author Ricardo Boza Villar
+ */
 public class MainE {
+
     public static void main(String[] args) {
         EmpleadoDAO dao = new EmpleadoDAO("FICHE.DAT");
-        int[] contador = new int[9]; // indices 1..8
 
-        try (DataInputStream in = dao.openForRead()) {
+        Map<Provincia, Integer> conteo = new EnumMap<>(Provincia.class);
+        int max = 0;
+
+        try (DataInputStream in = new DataInputStream(
+                 new BufferedInputStream(new FileInputStream("FICHE.DAT")))) {
+
             Empleado e;
-            while ((e = dao.readNext(in)) != null) {
-                byte p = e.getProvincia();
-                if (p >= 1 && p <= 8) {
-                    contador[p]++;
+            while ((e = dao.leeEmpleado(in)) != null) {
+                Provincia p = e.getProvincia();
+                int nuevoConteo = conteo.containsKey(p) ? conteo.get(p) + 1 : 1;
+                conteo.put(p, nuevoConteo);
+                if (nuevoConteo > max) {
+                    max = nuevoConteo;
                 }
             }
+
         } catch (IOException ex) {
-            ex.printStackTrace(System.err);
+            System.err.println("Error leyendo empleados: " + ex.getMessage());
         }
 
-        int max = 0;
-        for (byte i = 1; i <= 8; i++) {
-            if (contador[i] > max) max = contador[i];
-        }
-
-        if (max == 0) {
+        if (conteo.isEmpty()) {
             System.out.println("No hay empleados en el fichero.");
-            return;
-        }
-
-        for (byte i = 1; i <= 8; i++) {
-            if (contador[i] == max) {
-                System.out.println(nombreProvincia(i) + " -> " + max + " empleados");
+        } else {
+            System.out.println("Provincia(s) con mayor número de empleados:");
+            for (Map.Entry<Provincia, Integer> entry : conteo.entrySet()) {
+                if (entry.getValue() == max) {
+                    System.out.println(" - " + entry.getKey() + " (" + entry.getValue() + ")");
+                }
             }
-        }
-    }
-
-    private static String nombreProvincia(byte codigo) {
-        switch (codigo) {
-            case 1: return "Almería";
-            case 2: return "Cádiz";
-            case 3: return "Córdoba";
-            case 4: return "Granada";
-            case 5: return "Huelva";
-            case 6: return "Jaén";
-            case 7: return "Málaga";
-            case 8: return "Sevilla";
-            default: return "Desconocida";
         }
     }
 }

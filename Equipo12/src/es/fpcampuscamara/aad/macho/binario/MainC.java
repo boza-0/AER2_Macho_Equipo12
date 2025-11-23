@@ -3,36 +3,38 @@ package es.fpcampuscamara.aad.macho.binario;
 /* Equipo 12: Juan Luis Gil de Miguel, Ricardo Boza Villar */
 
 import java.io.DataInputStream;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 
+/**
+ * Listado de empleados con nombre y sueldo total.
+ * <p>
+ * El sueldo se calcula como {@code salarioBase + complementos}, donde los complementos
+ * siguen las reglas de negocio definidas en {@link Empleado#getComplementos()}.
+ * </p>
+ *
+ * @author Juan Luis Gil de Miguel
+ * @author Ricardo Boza Villar
+ */
 public class MainC {
-    public static void main(String[] args) {
-        EmpleadoDAO dao = new EmpleadoDAO("FICHE.DAT");
-        try (DataInputStream in = dao.openForRead()) {
-            Empleado e;
-            while ((e = dao.readNext(in)) != null) {
-                double sueldo = calcularSueldo(e);
-                System.out.printf("%s -> %.2f€%n", e.getNombre(), sueldo);
-            }
-        } catch (IOException ex) {
-            ex.printStackTrace(System.err);
-        }
-    }
 
-    // SUELDO = SALARIO + COMPLEMENTOS
-    // - Trienios: 24€ por trienio
-    // - Destino: Jaén(6), Huelva(5), Almería(1) +10% del salario
-    // - Por la cara: H +120€
-    private static double calcularSueldo(Empleado e) {
-        double sueldo = e.getSalario();
-        sueldo += e.getTrienios() * 24.0;
-        byte p = e.getProvincia();
-        if (p == 1 || p == 5 || p == 6) {
-            sueldo += e.getSalario() * 0.10;
+    public static void main(String[] args) {
+        System.out.println("Listado de empleados con nombre y sueldo total.");
+        EmpleadoDAO dao = new EmpleadoDAO("FICHE.DAT");
+
+        try (DataInputStream in = new DataInputStream(
+                 new BufferedInputStream(new FileInputStream("FICHE.DAT")))) {
+
+            Empleado e;
+            while ((e = dao.leeEmpleado(in)) != null) {
+                // Usamos directamente getSueldo() ya implementado en Empleado
+                System.out.printf("Nombre: %-30s | Sueldo: %.2f €%n",
+                                  e.getNombre(), e.getSueldo());
+            }
+
+        } catch (IOException ex) {
+            System.err.println("Error leyendo empleados: " + ex.getMessage());
         }
-        if (e.getSexo() == 'H') {
-            sueldo += 120.0;
-        }
-        return sueldo;
     }
 }

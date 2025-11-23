@@ -3,51 +3,58 @@ package es.fpcampuscamara.aad.macho.binario;
 /* Equipo 12: Juan Luis Gil de Miguel, Ricardo Boza Villar */
 
 import java.io.DataInputStream;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * Obtiene el nombre y apellidos del empleado(s) con el sueldo superior.
+ * <p>
+ * Recorre todos los registros del fichero binario {@code FICHE.DAT} mediante {@link EmpleadoDAO},
+ * calcula el sueldo de cada empleado usando {@link Empleado#getSueldo()}, y muestra
+ * aquellos que alcanzan el sueldo máximo.
+ * </p>
+ *
+ * @author Juan Luis Gil de Miguel
+ * @author Ricardo Boza Villar
+ */
 public class MainD {
 
     public static void main(String[] args) {
         EmpleadoDAO dao = new EmpleadoDAO("FICHE.DAT");
-        ArrayList<Empleado> mejores = new ArrayList<Empleado>();
-        double maxSueldo = Double.NEGATIVE_INFINITY;
 
-        try (DataInputStream in = dao.openForRead()) {
+        float maxSueldo = Float.MIN_VALUE;
+        List<Empleado> mejoresPagados = new ArrayList<Empleado>();
+
+        try (DataInputStream in = new DataInputStream(
+                 new BufferedInputStream(new FileInputStream("FICHE.DAT")))) {
+
             Empleado e;
-            while ((e = dao.readNext(in)) != null) {
-                double sueldo = calcularSueldo(e);
+            while ((e = dao.leeEmpleado(in)) != null) {
+                float sueldo = e.getSueldo();
                 if (sueldo > maxSueldo) {
                     maxSueldo = sueldo;
-                    mejores.clear();
-                    mejores.add(e);
+                    mejoresPagados.clear();
+                    mejoresPagados.add(e);
                 } else if (sueldo == maxSueldo) {
-                    mejores.add(e);
+                    mejoresPagados.add(e);
                 }
             }
+
         } catch (IOException ex) {
-            ex.printStackTrace(System.err);
+            System.err.println("Error leyendo empleados: " + ex.getMessage());
         }
 
-        if (mejores.isEmpty()) {
+        if (mejoresPagados.isEmpty()) {
             System.out.println("No hay empleados en el fichero.");
         } else {
-            for (Empleado e : mejores) {
-                System.out.println(e.getNombre() + " -> " + String.format("%.2f", maxSueldo) + " €");
+            System.out.printf("Sueldo máximo: %.2f €%n", maxSueldo);
+            System.out.println("Empleado(s) con sueldo superior:");
+            for (Empleado e : mejoresPagados) {
+                System.out.println(" - " + e.getNombre());
             }
         }
-    }
-
-    private static double calcularSueldo(Empleado e) {
-        double sueldo = e.getSalario();
-        sueldo += e.getTrienios() * 24.0;
-        byte p = e.getProvincia();
-        if (p == 1 || p == 5 || p == 6) {
-            sueldo += e.getSalario() * 0.10;
-        }
-        if (e.getSexo() == 'H') {
-            sueldo += 120.0;
-        }
-        return sueldo;
     }
 }
