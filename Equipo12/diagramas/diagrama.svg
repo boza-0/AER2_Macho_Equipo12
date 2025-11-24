@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="67cm" height="29cm" viewBox="139 159 1336 566" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="660" y="240" width="448.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="240" width="448.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="884.45" y="260">Empleado</text>
+    <rect style="fill: #ffffff" x="660" y="268" width="448.9" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="268" width="448.9" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="281.2">-nombre: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="297.2">-sexo: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="313.2">-salarioBase: float</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="329.2">-anio: short</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="345.2">-mes: byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="361.2">-dia: byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="377.2">-tipo: TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="393.2">-provincia: Provincia</text>
+    <rect style="fill: #ffffff" x="660" y="400" width="448.9" height="324"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="400" width="448.9" height="324"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="413.2">+Empleado(nombre:String,sexo:char,salarioBase:float,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="429.2">          anio:short,mes:byte,dia:byte,tipo:TipoEmpleado,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="445.2">          provincia:Provincia)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="461.2">+getNombre(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="477.2">+getSexo(): char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="493.2">+getSalarioBase(): float</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="509.2">+getAnio(): short</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="525.2">+getMes(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="541.2">+getDia(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="557.2">+getTipo(): TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="573.2">+getProvincia(): Provincia</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="589.2">+&lt;&lt;static&gt;&gt; esFechaValida(anio:short,mes:byte,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="605.2">                          dia:byte): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="621.2">+getFechaEntrada(): GregorianCalendar</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="637.2">+getAntiguedad(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="653.2">+getTrienios(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="669.2">+getComplementos(): float</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="685.2">+getSueldo(): float</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="701.2">+imprimeFechaEntrada(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663" y="717.2">+toString(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1140" y="240" width="333.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1140" y="240" width="333.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1306.7" y="260">EmpleadoDAO</text>
+    <rect style="fill: #ffffff" x="1140" y="268" width="333.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1140" y="268" width="333.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1143" y="281.2">-fichero: String</text>
+    <rect style="fill: #ffffff" x="1140" y="288" width="333.4" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1140" y="288" width="333.4" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1143" y="301.2">+EmpleadoDAO(fichero:String)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1143" y="317.2">+escribeEmpleado(e:Empleado): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1143" y="333.2">+leeEmpleado(in:DataInputStream): Empleado</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="200" y="440" width="387.3" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="440" width="387.3" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="393.65" y="455.2">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="393.65" y="476">Provincia</text>
+    <rect style="fill: #ffffff" x="200" y="484" width="387.3" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="484" width="387.3" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="497.2"> ALMERIA (codigo: byte=1, nombre:String="Almería"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="513.2"> CADIZ (codigo:byte=2, nombre:String="Cádiz")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="529.2"> CORDOBA (codigo:byte=3, nombre:String="Córdoba")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="545.2"> GRANADA (codigo:byte=4, nombre:String="Granada")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="561.2"> HUELVA (codigo:byte=5, nombre:String="Huelva")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="577.2"> JAEN (codigo:byte=6, nombre:String="Jaén")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="593.2"> MALAGA (codigo:byte=7, nombre:String="Málaga")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="609.2"> SEVILLA (codigo:byte=6, nombre:String="Sevilla")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="625.2">-codigo: byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="641.2">-nombre: String</text>
+    <rect style="fill: #ffffff" x="200" y="648" width="387.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="648" width="387.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="661.2">+getCodigo(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="677.2">+toString(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="203" y="693.2">+fromCodigo(codigo:byte): Provincia</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="140" y="160" width="487.4" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="160" width="487.4" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="383.7" y="175.2">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="383.7" y="196">TipoEmpleado</text>
+    <rect style="fill: #ffffff" x="140" y="204" width="487.4" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="204" width="487.4" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="217.2"> COMISION (codigo:char='C', descripcion:String="A comisión")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="233.2"> FIJO (codigo:char='F', descripcion:String="Fijo")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="249.2"> DOMICILIO (codigo:char='D', descripcion:String="A domicilio")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="265.2">-codigo: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="281.2">-descripcion: String</text>
+    <rect style="fill: #ffffff" x="140" y="288" width="487.4" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="288" width="487.4" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="301.2">+getCodigo(): char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="317.2">+toString(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="143" y="333.2">+fromCodigo(codigo:char): TipoEmpleado</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1306.7,238.994 1306.7,211 884.45,211 884.45,233.295 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="879.45,220.647 884.45,236.647 889.45,220.647 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="393.65,440 393.65,390 660,390 "/>
+    <polygon style="fill: #000000" points="528.825,390 528.825,382 536.825,386 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="383.7,340 383.7,374 660,374 "/>
+    <polygon style="fill: #000000" points="523.85,374 523.85,366 531.85,370 "/>
+  </g>
+</svg>
