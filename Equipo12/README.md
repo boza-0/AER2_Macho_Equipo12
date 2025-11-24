@@ -11,4 +11,5 @@
 - Somos Juan Luis Gil de Miguel y Ricardo Boza Villar, y este repositorio de Github es un simulacro y es privado. Actualmente estudiamos segundo año del Ciclo Superior de Formación Profesional `Desarrollo de Aplicaciones Multiplataforma` en Campus Cámara de Comercio de Sevilla.
 
 # Contacto: 
-- Puedes contactar con nosotros a través de Github o LinkedIn. 
+- Puedes contactar con nosotros a través de Github o LinkedIn.
+- ¡Este es un proyecto de Github! Puedes verlo en: https://github.com/boza-0/Equipo12
