@@ -1,0 +1,1 @@
+![Diagrama del sistema](diagrama.svg)

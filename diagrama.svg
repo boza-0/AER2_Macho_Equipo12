@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="67cm" height="44cm" viewBox="35 28 1335 865" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="756.253" y="347.032" width="448.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="756.253" y="347.032" width="448.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="980.703" y="367.032">Empleado</text>
+    <rect style="fill: #ffffff" x="756.253" y="375.032" width="448.9" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="756.253" y="375.032" width="448.9" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="388.232">-nombre: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="404.232">-sexo: Sexo</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="420.232">-salarioBase: BigDecimal</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="436.232">-fechaIngreso: Date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="452.232">-tipoEmpleado: TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="468.232">-provincia: Provincia</text>
+    <rect style="fill: #ffffff" x="756.253" y="475.032" width="448.9" height="212"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="756.253" y="475.032" width="448.9" height="212"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="488.232">+Empleado(nombre:String,sexo:Sexo,salarioBase:BigDecimal,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="504.232">          fechaIngreso:Date,tipoEmpleado:TipoEmpleado,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="520.232">          provincia:Provincia)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="536.232">+getNombre(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="552.232">+getSexo(): Sexo</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="568.232">+getSalarioBase(): BigDecimal</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="584.232">+getFechaIngreso(): Date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="600.232">+getTipoEmpleado(): TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="616.232">+getProvincia(): Provincia</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="632.232">+getAntiguedad(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="648.232">+getTrienios(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="664.232">+getComplementos(): BigDecimal</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="759.253" y="680.232">+getSueldo(): BigDecimal</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="776.253" y="167.032" width="387.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="776.253" y="167.032" width="387.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="969.903" y="187.032">EmpleadoDAO</text>
+    <rect style="fill: #ffffff" x="776.253" y="195.032" width="387.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="776.253" y="195.032" width="387.3" height="8"/>
+    <rect style="fill: #ffffff" x="776.253" y="203.032" width="387.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="776.253" y="203.032" width="387.3" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.253" y="216.232">+escribeEmpleado(fichero:String,e:Empleado): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="779.253" y="232.232">+leeEmpleado(in:DataInputStream): Empleado</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="36.2535" y="567.032" width="387.3" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="567.032" width="387.3" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="229.903" y="582.232">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="229.903" y="603.032">Provincia</text>
+    <rect style="fill: #ffffff" x="36.2535" y="611.032" width="387.3" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="611.032" width="387.3" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="624.232"> ALMERIA (codigo: byte=1, nombre:String="Almería"</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="640.232"> CADIZ (codigo:byte=2, nombre:String="Cádiz")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="656.232"> CORDOBA (codigo:byte=3, nombre:String="Córdoba")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="672.232"> GRANADA (codigo:byte=4, nombre:String="Granada")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="688.232"> HUELVA (codigo:byte=5, nombre:String="Huelva")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="704.232"> JAEN (codigo:byte=6, nombre:String="Jaén")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="720.232"> MALAGA (codigo:byte=7, nombre:String="Málaga")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="736.232"> SEVILLA (codigo:byte=6, nombre:String="Sevilla")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="752.232">-codigo: byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="768.232">-nombre: String</text>
+    <rect style="fill: #ffffff" x="36.2535" y="775.032" width="387.3" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="775.032" width="387.3" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="788.232">+getCodigo(): byte</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="804.232">+toString(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="820.232">+&lt;&lt;static&gt;&gt; fromCodigo(codigo:byte): Provincia</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="836.232">+&lt;&lt;static&gt;&gt; fromInput(input:String): Provincia</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="852.232">-&lt;&lt;static&gt;&gt; normalizar(input:String): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="36.2535" y="147.032" width="487.4" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="147.032" width="487.4" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="279.953" y="162.232">&lt;&lt;Enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="279.953" y="183.032">TipoEmpleado</text>
+    <rect style="fill: #ffffff" x="36.2535" y="191.032" width="487.4" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="191.032" width="487.4" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="204.232"> COMISION (codigo:char='C', descripcion:String="A comisión")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="220.232"> FIJO (codigo:char='F', descripcion:String="Fijo")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="236.232"> DOMICILIO (codigo:char='D', descripcion:String="A domicilio")</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="252.232">-codigo: char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="268.232">-descripcion: String</text>
+    <rect style="fill: #ffffff" x="36.2535" y="275.032" width="487.4" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="275.032" width="487.4" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="288.232">+getCodigo(): char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="304.232">+toString(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="320.232">+&lt;&lt;static&gt;&gt; fromCodigo(codigo:char): TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="336.232">+&lt;&lt;static&gt;&gt; fromInput(input:String): TipoEmpleado</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="352.232">-&lt;&lt;static&gt;&gt; normalizar(input:String): String</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="969.903,240.041 969.903,289.536 980.703,289.536 980.703,340.326 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975.703,327.679 980.703,343.679 985.703,327.679 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1186.66" y="679.782">
+    <tspan x="1186.66" y="679.782"></tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="36.2535" y="387.032" width="348.8" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="387.032" width="348.8" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="210.653" y="402.232">&lt;&lt;enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="210.653" y="423.032">Sexo</text>
+    <rect style="fill: #ffffff" x="36.2535" y="431.032" width="348.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="431.032" width="348.8" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="444.232"> HOMBRE('H')</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="460.232"> MUJER('M')</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="476.232">-codigo: char</text>
+    <rect style="fill: #ffffff" x="36.2535" y="483.032" width="348.8" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.2535" y="483.032" width="348.8" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="496.232">+getCodigo(): char</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="512.232">+&lt;&lt;static&gt;&gt; fromCodigo(codigo:char): Sexo</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="528.232">+&lt;&lt;static&gt;&gt; fromInput(input:String): Sexo</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="39.2535" y="544.232">-&lt;&lt;static&gt;&gt; normalizar(input:String): String</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="385.053,409.032 570.653,409.032 570.653,361.032 756.253,361.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="572.653" y="381.032"></text>
+    <polygon style="fill: #000000" points="574.653,381.032 574.653,373.032 582.653,377.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="389.053" y="405.032"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="752.253" y="357.032"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523.653,169.032 639.953,169.032 639.953,361.032 756.253,361.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="641.953" y="261.032"></text>
+    <polygon style="fill: #000000" points="643.953,261.032 643.953,253.032 651.953,257.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="527.653" y="165.032"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="752.253" y="357.032"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="423.553,589.032 616.253,589.032 616.253,361.032 756.253,361.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="618.253" y="471.032"></text>
+    <polygon style="fill: #000000" points="620.253,471.032 620.253,463.032 628.253,467.032 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="427.553" y="585.032"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="752.253" y="357.032"></text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="966.871" cy="802.372" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="966.871" cy="802.372" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="942.871" y1="814.372" x2="990.871" y2="814.372"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="966.871" y1="808.372" x2="966.871" y2="838.372"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="966.871" y1="838.372" x2="942.871" y2="864.372"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="966.871" y1="838.372" x2="990.871" y2="864.372"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="966.871" y="889.172">
+      <tspan x="966.871" y="889.172"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 924.897 37.2238 C 940.897,31.7238 948.897,29.8905 964.897,29.8905 C 980.897,29.8905 988.897,31.7238 1004.9,37.2238 L 1004.9,66.5571 C 988.897,72.0571 980.897,73.8905 964.897,73.8905 C 948.897,73.8905 940.897,72.0571 924.897,66.5571 L 924.897,37.2238z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 924.897 37.2238 C 940.897,31.7238 948.897,29.8905 964.897,29.8905 C 980.897,29.8905 988.897,31.7238 1004.9,37.2238 L 1004.9,66.5571 C 988.897,72.0571 980.897,73.8905 964.897,73.8905 C 948.897,73.8905 940.897,72.0571 924.897,66.5571 L 924.897,37.2238"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 924.897 37.2238 C 940.897,42.7238 948.897,44.5571 964.897,44.5571 C 980.897,44.5571 988.897,42.7238 1004.9,37.2238"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="964.897" y="60.3571">
+      <tspan x="964.897" y="60.3571"></tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016.25" y="57.0317">
+    <tspan x="1016.25" y="57.0317">Fichero</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="936.253" y1="87.0317" x2="936.253" y2="137.296"/>
+    <polygon style="fill: #000000" points="936.253,144.796 931.253,134.796 936.253,137.296 941.253,134.796 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="936.253,144.796 931.253,134.796 936.253,137.296 941.253,134.796 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="996.253" y1="147.032" x2="996.253" y2="96.7678"/>
+    <polygon style="fill: #000000" points="996.253,89.2678 1001.25,99.2678 996.253,96.7678 991.253,99.2678 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="996.253,89.2678 1001.25,99.2678 996.253,96.7678 991.253,99.2678 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="876.253" y="127.032">
+    <tspan x="876.253" y="127.032">Lectura</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016.25" y="127.032">
+    <tspan x="1016.25" y="127.032">Escritura</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="996.253" y1="767.032" x2="996.253" y2="716.768"/>
+    <polygon style="fill: #000000" points="996.253,709.268 1001.25,719.268 996.253,716.768 991.253,719.268 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="996.253,709.268 1001.25,719.268 996.253,716.768 991.253,719.268 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="936.253" y1="707.032" x2="936.253" y2="757.296"/>
+    <polygon style="fill: #000000" points="936.253,764.796 931.253,754.796 936.253,757.296 941.253,754.796 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="936.253,764.796 931.253,754.796 936.253,757.296 941.253,754.796 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="876.253" y="747.032">
+    <tspan x="876.253" y="747.032">Lectura</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016.25" y="747.032">
+    <tspan x="1016.25" y="747.032">Escritura</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="936.253" y1="267.032" x2="936.253" y2="317.296"/>
+    <polygon style="fill: #000000" points="936.253,324.796 931.253,314.796 936.253,317.296 941.253,314.796 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="936.253,324.796 931.253,314.796 936.253,317.296 941.253,314.796 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="996.253" y1="327.032" x2="996.253" y2="276.768"/>
+    <polygon style="fill: #000000" points="996.253,269.268 1001.25,279.268 996.253,276.768 991.253,279.268 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="996.253,269.268 1001.25,279.268 996.253,276.768 991.253,279.268 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="876.253" y="307.032">
+    <tspan x="876.253" y="307.032">Lectura</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016.25" y="307.032">
+    <tspan x="1016.25" y="307.032">Escritura</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="966.871" y="838.372">
+    <tspan x="966.871" y="838.372"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="966.871" y="838.372">
+    <tspan x="966.871" y="838.372"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1084.07" y="853.574">
+    <tspan x="1084.07" y="853.574"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1016.25" y="857.032">
+    <tspan x="1016.25" y="857.032">Usuario</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1196.25" y="767.032">
+    <tspan x="1196.25" y="767.032">(lógica de recepción)</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1256.25" y="767.032">
+    <tspan x="1256.25" y="767.032"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1196.25" y="207.032">
+    <tspan x="1196.25" y="207.032">(lógica de escritura en fichero)</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1276.25" y="207.032">
+    <tspan x="1276.25" y="207.032"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1196.25" y="787.032">
+    <tspan x="1196.25" y="787.032">(lógica de validación)</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1196.25" y="807.032">
+    <tspan x="1196.25" y="807.032">(lógica de acomodación)</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1176.25" y1="787.032" x2="1085.29" y2="750.648"/>
+    <polygon style="fill: #000000" points="1078.33,747.862 1089.47,746.934 1085.29,750.648 1085.76,756.218 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1078.33,747.862 1089.47,746.934 1085.29,750.648 1085.76,756.218 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="678.523" y="807.032">
+    <tspan x="678.523" y="807.032">(lógica de acomodación)</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="756.253" y1="787.032" x2="847.214" y2="750.648"/>
+    <polygon style="fill: #000000" points="854.177,747.862 846.75,756.218 847.214,750.648 843.036,746.934 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="854.177,747.862 846.75,756.218 847.214,750.648 843.036,746.934 "/>
+  </g>
+</svg>
